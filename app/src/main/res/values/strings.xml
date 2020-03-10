@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Zest</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">cancel</string>
+    <string name="sign_up">sign up</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Email">Email</string>
+    <string name="zest">Zest</string>
+    <string name="signUpPage">Sign Up</string>
+    <string name="login_signUp">Login</string>
+</resources>
