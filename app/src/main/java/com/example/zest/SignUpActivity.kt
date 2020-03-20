@@ -46,12 +46,18 @@ class SignUpActivity:AppCompatActivity (){
                     }
                 }
         }
+
         //cancel the registration
         btn_cancel.setOnClickListener{
             val et_email = findViewById(R.id.et_email_signUp)as EditText
             val et_password = findViewById(R.id.et_password_signUp)as EditText
            et_email.setText("")
            et_password.setText("")
+        }
+
+
+        login_sigUp.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }
