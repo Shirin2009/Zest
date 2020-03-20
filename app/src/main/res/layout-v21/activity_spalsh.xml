@@ -5,13 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
+    android:background="@drawable/splash"
     android:orientation="vertical">
 
-    <!-- Don't worry about the id names I have named the id's with reference to the file name for consistency -->
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/splash_img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp" />
@@ -20,12 +19,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zest"
+        android:text="@string/zest"
+        android:typeface="serif"
         android:textSize="60sp"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/colorPrimary"
-        android:layout_below="@id/imageView"
         android:padding="30dp"/>
 
     <ProgressBar

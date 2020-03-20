@@ -9,7 +9,8 @@ class DatabaseHelper(context: Context?):SQLiteOpenHelper(context, DATABASE_NAME,
 
     //create table SQL query
     private val CREATE_TABLE_USER = (" CREATE TABLE " + TABLE_USER + "("
-            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")")
+            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + COLUMN_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")")
 
     //drop table sql query
     private val DROP_USER_TABLE = " DROP TABLE IF EXISTS $TABLE_USER"
@@ -24,7 +25,8 @@ class DatabaseHelper(context: Context?):SQLiteOpenHelper(context, DATABASE_NAME,
         //create table again
         onCreate(db)
     }
-    //this method is for insert a data into database table
+
+    //this method is for insert  data into database table
     fun insertUserData(email: String, password: String) {
         val db = this.writableDatabase
         val contentValues = ContentValues()
@@ -36,6 +38,7 @@ class DatabaseHelper(context: Context?):SQLiteOpenHelper(context, DATABASE_NAME,
         db.close()
     }
 
+    //checks to see if user already exists
     fun userPresents(email: String, password: String):Boolean{
         val db=writableDatabase
         val query= "select * from users where email = '$email' and password = '$password' "

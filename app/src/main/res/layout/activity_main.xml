@@ -49,8 +49,8 @@
             android:orientation="horizontal"
             android:typeface="serif">
             <Button
-                android:id="@+id/btn_submit"
-                android:text="@string/submit"
+                android:id="@+id/btn_login"
+                android:text="@string/login"
                 android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,14 +63,16 @@
                 android:layout_height="wrap_content"
                 android:typeface="serif"/>
 
-        </LinearLayout> <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/colorPrimary"
-        android:padding="10dp"
-        android:text="@string/sign_up"
-        android:typeface="serif"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/signUp-login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="@string/sign_up"
+            android:typeface="serif"/>
     </LinearLayout>
 
 </RelativeLayout>
