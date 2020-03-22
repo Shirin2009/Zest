@@ -12,4 +12,9 @@
     <string name="zest">Zest</string>
     <string name="signUpPage">Sign Up</string>
     <string name="login_signUp">Login</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="title">Title</string>
+    <string name="add_a_recipe">Add a Recipe!</string>
+    <string name="add_a_recipe">Add a Recipe!</string>
 </resources>
