@@ -23,6 +23,7 @@ class SignUpActivity:AppCompatActivity (){
             val email = et_email_signUp.text.toString().trim()
             val password = et_password_signUp.text.toString().trim()
 
+
             when{
                 email.isEmpty()->{
                     et_email_signUp.error="Email Required!"
